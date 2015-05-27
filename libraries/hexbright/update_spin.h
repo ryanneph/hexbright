@@ -68,9 +68,13 @@ void update_spin() {
 	     continue_time > now); // not ready for update
     if (next_strobe <= now) {
       if (now - next_strobe <26) {
-	digitalWriteFast(DPIN_DRV_EN, HIGH);
+	//digitalWriteFast(DPIN_DRV_EN, HIGH);
+	digitalWriteFast(DPIN_DRV_MODE, HIGH);
+	analogWrite(DPIN_DRV_EN, 255);
 	delayMicroseconds(strobe_duration);
-	digitalWriteFast(DPIN_DRV_EN, LOW);
+	//digitalWriteFast(DPIN_DRV_EN, LOW);
+	digitalWriteFast(DPIN_DRV_MODE, LOW);
+	analogWrite(DPIN_DRV_EN, 0);
       }
       next_strobe += strobe_delay;
     }

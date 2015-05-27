@@ -17,6 +17,13 @@ void set_strobe_duration(int duration) {
   strobe_duration = duration;
 }
 
+void set_strobe_duty_cycle(double dutypercent) {
+	if (dutypercent < 0) dutypercent = 0;
+	else if (dutypercent > 100) dutypercent = 100;
+
+	strobe_duration = strobe_delay * (dutypercent / 100);
+}
+
 void set_strobe_fpm(unsigned int fpm) {
   set_strobe_delay(60000000/fpm);
 }

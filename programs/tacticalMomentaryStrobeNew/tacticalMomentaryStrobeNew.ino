@@ -70,8 +70,8 @@ void loop() {
     else if (hb.button_pressed_time()>HOLD_TIME & hb.button_pressed()) {
         // held for over HOLD_TIME ms, go to strobe
         hb.set_light(0,0,NOW);
-        set_strobe_fpm(60);
-        set_strobe_duty_cycle(75);
+        set_strobe_fpm(500);
+        set_strobe_duty_cycle(10);
         while (hb.button_pressed()) { //keep strobing until button is released
           hb.update();
         }

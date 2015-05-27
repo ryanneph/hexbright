@@ -39,6 +39,11 @@ extern void set_strobe_duration(int duration);
 //  you are strobing at 59523 fpm, +- 703 fpm.
 // This code requires calibration/tuning
   
+// duty cycle accepted is percentage from 0-100%
+// 100% duty cycle should look like a continuous light instead of a strobe
+// 0% duty cycle will not illuminate the led at all.
+extern void set_strobe_duty_cycle(double dutypercent);
+
 //  fpm accepted is from 0-65k
 //  the higher the fpm, the higher the error.
 extern void set_strobe_fpm(unsigned int fpm);
