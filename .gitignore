@@ -25,3 +25,12 @@ hexbright-emc2cube
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Visual Studio 2013 Files #
+############################
+Hexbright_Libraries.opensdf
+Hexbright_Libraries.sdf
+Hexbright_Libraries.sln
+Hexbright_Libraries.v12.suo
+Hexbright_Libraries.vcxproj
+Hexbright_Libraries.vcxproj.filters
