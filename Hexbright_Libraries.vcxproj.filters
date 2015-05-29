@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="experiments\accelerometer_readings\test_program\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hardware\hexbright\bootloaders\atmega\ATmegaBOOT_168.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hb_utilities\click_counter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hb_utilities\input_digit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hb_utilities\print_binary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hb_utilities\print_number.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hb_utilities\print_power.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hb_utilities\strobe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hexbright\set_light_level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\hexbright\twi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\time\DateStrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\time\Time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hardware\hexbright\bootloaders\atmega\command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\digitalwritefast\digitalWriteFast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hb_utilities\click_counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hb_utilities\input_digit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hb_utilities\print_binary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hb_utilities\print_number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hb_utilities\print_power.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hb_utilities\strobe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hexbright\hexbright.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hexbright\pc_stubs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hexbright\read_adc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hexbright\set_light_level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hexbright\twi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\hexbright\update_spin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\time\Time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\accelerometer_record\accelerometer_record.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hb-examples\alarm_clock\alarm_clock.ino" />
+    <None Include="hb-examples\down_light\down_light.ino" />
+    <None Include="hb-examples\numeric_input\numeric_input.ino" />
+    <None Include="hb-examples\stroboscope\stroboscope.ino" />
+    <None Include="hb-examples\unplugged_action\unplugged_action.ino" />
+    <None Include="programs\action_timer\action_timer.ino" />
+    <None Include="programs\bikelight\BikeLight.ino" />
+    <None Include="programs\functional\functional.ino" />
+    <None Include="programs\set_and_remember\set_and_remember.ino" />
+    <None Include="programs\spin_level\spin_level.ino" />
+    <None Include="programs\tactical\tactical.ino" />
+    <None Include="programs\tacticalmomentary\tacticalMomentary.ino" />
+    <None Include="programs\temperature_calibration\temperature_calibration.ino" />
+    <None Include="programs\up_n_down\up_n_down.ino" />
+    <None Include="programs\wand\wand.ino" />
+    <None Include="tests\accelerometer_test\accelerometer_test.ino" />
+    <None Include="tests\avr_voltage_test\avr_voltage_test.ino" />
+    <None Include="tests\led_test\led_test.ino" />
+    <None Include="tests\light_test\light_test.ino" />
+    <None Include="tests\linearity_test\linearity_test.ino" />
+    <None Include="tests\print_number_test\print_number_test.ino" />
+    <None Include="tests\stroboscope_test\stroboscope_test.ino" />
+    <None Include="programs\tacticalMomentaryStrobeNew\tacticalMomentaryStrobeNew.ino" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A67E19F-A1E7-489A-8653-0BE6A85C214D}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="experiments\accelerometer_readings\test_program\test.cpp" />
+    <ClCompile Include="hardware\hexbright\bootloaders\atmega\ATmegaBOOT_168.c" />
+    <ClCompile Include="libraries\hb_utilities\click_counter.cpp" />
+    <ClCompile Include="libraries\hb_utilities\input_digit.cpp" />
+    <ClCompile Include="libraries\hb_utilities\print_binary.cpp" />
+    <ClCompile Include="libraries\hb_utilities\print_number.cpp" />
+    <ClCompile Include="libraries\hb_utilities\print_power.cpp" />
+    <ClCompile Include="libraries\hb_utilities\strobe.cpp" />
+    <ClCompile Include="libraries\hexbright\set_light_level.cpp" />
+    <ClCompile Include="libraries\hexbright\twi.c" />
+    <ClCompile Include="libraries\time\DateStrings.cpp" />
+    <ClCompile Include="libraries\time\Time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hardware\hexbright\bootloaders\atmega\command.h" />
+    <ClInclude Include="libraries\digitalwritefast\digitalWriteFast.h" />
+    <ClInclude Include="libraries\hb_utilities\click_counter.h" />
+    <ClInclude Include="libraries\hb_utilities\input_digit.h" />
+    <ClInclude Include="libraries\hb_utilities\print_binary.h" />
+    <ClInclude Include="libraries\hb_utilities\print_number.h" />
+    <ClInclude Include="libraries\hb_utilities\print_power.h" />
+    <ClInclude Include="libraries\hb_utilities\strobe.h" />
+    <ClInclude Include="libraries\hexbright\hexbright.h" />
+    <ClInclude Include="libraries\hexbright\pc_stubs.h" />
+    <ClInclude Include="libraries\hexbright\read_adc.h" />
+    <ClInclude Include="libraries\hexbright\set_light_level.h" />
+    <ClInclude Include="libraries\hexbright\twi.h" />
+    <ClInclude Include="libraries\hexbright\update_spin.h" />
+    <ClInclude Include="libraries\time\Time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hb-examples\alarm_clock\alarm_clock.ino" />
+    <None Include="hb-examples\down_light\down_light.ino" />
+    <None Include="hb-examples\numeric_input\numeric_input.ino" />
+    <None Include="hb-examples\stroboscope\stroboscope.ino" />
+    <None Include="hb-examples\unplugged_action\unplugged_action.ino" />
+    <None Include="programs\action_timer\action_timer.ino" />
+    <None Include="programs\bikelight\BikeLight.ino" />
+    <None Include="programs\functional\functional.ino" />
+    <None Include="programs\set_and_remember\set_and_remember.ino" />
+    <None Include="programs\spin_level\spin_level.ino" />
+    <None Include="programs\tacticalMomentaryStrobeNew\tacticalMomentaryStrobeNew.ino" />
+    <None Include="programs\tacticalmomentary\tacticalMomentary.ino" />
+    <None Include="programs\tactical\tactical.ino" />
+    <None Include="programs\temperature_calibration\temperature_calibration.ino" />
+    <None Include="programs\up_n_down\up_n_down.ino" />
+    <None Include="programs\wand\wand.ino" />
+    <ClInclude Include="tests\accelerometer_record\accelerometer_record.ino">
+      <FileType>Document</FileType>
+    </ClInclude>
+    <None Include="tests\accelerometer_test\accelerometer_test.ino" />
+    <None Include="tests\avr_voltage_test\avr_voltage_test.ino" />
+    <None Include="tests\led_test\led_test.ino" />
+    <None Include="tests\light_test\light_test.ino" />
+    <None Include="tests\linearity_test\linearity_test.ino" />
+    <None Include="tests\print_number_test\print_number_test.ino" />
+    <None Include="tests\stroboscope_test\stroboscope_test.ino" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
