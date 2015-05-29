@@ -12,8 +12,8 @@ int i =0;
 void loop() {
   i++;
   hb.update();
-//  led_brightness_test(GLED);
-  on_off_test();
+  led_brightness_test(GLED);
+//  on_off_test();
 //  switch_test();
 }
 

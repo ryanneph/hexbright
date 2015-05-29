@@ -1,7 +1,7 @@
 #include <print_power.h>
 #include <strobe.h>
 
-//#define DEBUG DEBUG_PRINT
+#define DEBUG DEBUG_LOOP
 
 // These next two lines must come after all other library #includes
 #define BUILD_HACK
@@ -49,20 +49,14 @@ void loop() {
       if(current_brightness!=OFF && on_time+OFF_TIME<millis()) { //if it has been OFF_TIME seconds since last mode change, turn off
         current_brightness = OFF; //Set flashlight mode to off
         hb.set_light(CURRENT_LEVEL, brightness[current_brightness], 50);
-        Serial.print("current_brightness: "); 
-        Serial.print(current_brightness); 
-        Serial.print("\n");
+        Serial.print("current_brightness: " + (String)current_brightness + "\n"); 
       } 
       else { //Change light mode by one
         current_brightness = (current_brightness+1)%BRIGHTNESS_COUNT;
         hb.set_light(CURRENT_LEVEL, brightness[current_brightness], 50);
         on_time = millis();
-        Serial.print("on_time value is: "); 
-        Serial.print(on_time); 
-        Serial.print("\n");
-        Serial.print("current_brightness: "); 
-        Serial.print(current_brightness); 
-        Serial.print("\n");
+        Serial.print("on_time value is: " + (String)on_time + "\n"); 
+        Serial.print("current_brightness: " + (String)current_brightness + "\n"); 
       }  
 
       //TACTICAL STROBE MODE (FLASH AT MAX BRIGHTNESS IF BUTTON IS HELD)
@@ -70,8 +64,8 @@ void loop() {
     else if (hb.button_pressed_time()>HOLD_TIME & hb.button_pressed()) {
         // held for over HOLD_TIME ms, go to strobe
         hb.set_light(0,0,NOW);
-        set_strobe_fpm(500);
-        set_strobe_duty_cycle(10);
+        set_strobe_fpm(850);
+        set_strobe_duty_cycle(30);
         while (hb.button_pressed()) { //keep strobing until button is released
           hb.update();
         }

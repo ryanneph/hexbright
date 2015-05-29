@@ -1,7 +1,6 @@
 #include <print_power.h>
-#include <strobe.h>
 
-#define DEBUG DEBUG_PRINT
+#define DEBUG DEBUG_LOOP
 
 // These next two lines must come after all other library #includes
 #define BUILD_HACK

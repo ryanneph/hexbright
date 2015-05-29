@@ -28,7 +28,7 @@ extern void set_strobe_delay(unsigned long delay);
 //  below 50, you will not see the light
 // 75-400 work well for strobing; 
 //  above 3000 you will lose some accelerometer samples.
-extern void set_strobe_duration(int duration);
+extern void set_strobe_duration(unsigned long duration);
 
   
 // convenience functions:
@@ -42,7 +42,7 @@ extern void set_strobe_duration(int duration);
 // duty cycle accepted is percentage from 0-100%
 // 100% duty cycle should look like a continuous light instead of a strobe
 // 0% duty cycle will not illuminate the led at all.
-extern void set_strobe_duty_cycle(double dutypercent);
+extern void set_strobe_duty_cycle(float dutypercent);
 
 //  fpm accepted is from 0-65k
 //  the higher the fpm, the higher the error.
@@ -62,7 +62,10 @@ extern unsigned int get_strobe_error();
 
 extern unsigned long next_strobe;
 extern unsigned long strobe_delay;
-extern int strobe_duration;
+extern unsigned long strobe_duration;
+extern unsigned long strobe_off_time;
+extern bool strobe_state;
+
 
 
 
