@@ -1,0 +1,5 @@
+-I./lib/hexbright/
+-I./lib/hb_utilities/
+-I./lib/digitalWriteFast/
+-I./lib/Time/
+-DBUILD_HACK
